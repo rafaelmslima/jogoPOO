@@ -1,7 +1,3 @@
-# jogoPOO
-
-RPG Game for my POO class
-
 <h1>Guardians' Odyssey</h1>
 
 <h2>O que é o projeto</h2>
@@ -10,22 +6,22 @@ RPG Game for my POO class
 
 <h2>Quais tecnologias foram utilizadas no projeto</h2>
 
-<b>Java:</b> Linguagem de programação principal utilizada para desenvolver a lógica do jogo.
-<b>Java Swing:</b> Biblioteca utilizada para criar a interface gráfica do jogo.
-<b>Eclipse IDE:</b> Ambiente de desenvolvimento integrado utilizado para escrever, compilar e depurar o código.
+- <b>Java:</b> Linguagem de programação principal utilizada para desenvolver a lógica do jogo.
+- <b>Java Swing:</b> Biblioteca utilizada para criar a interface gráfica do jogo.
+- <b>Eclipse IDE:</b> Ambiente de desenvolvimento integrado utilizado para escrever, compilar e depurar o código.
 
 <h2>Como rodar o projeto</h2>
 
 <h3>Pré-requisitos</h3>
 
-<b>Java Development Kit (JDK):</b> Certifique-se de ter o JDK instalado. Você pode baixá-lo aqui.
-<b>Eclipse IDE:</b> É recomendado usar o Eclipse IDE para facilitar o desenvolvimento e execução do projeto. Baixe o Eclipse aqui.
+- <b>Java Development Kit (JDK):</b> Certifique-se de ter o JDK instalado. Você pode baixá-lo [aqui](https://www.oracle.com/java/technologies/downloads/?er=221886#javasejdk).
+- <b>Eclipse IDE:</b> É recomendado usar o Eclipse IDE para facilitar o desenvolvimento e execução do projeto. Baixe o Eclipse [aqui](https://www.eclipse.org/downloads/).
 
 <h3>Passos para rodar o projeto</h3>
 
 1. <b>Clone o repositório:</b>
 
-`git clone https://github.com/seuusuario/jogoPOO.git`
+- `git clone https://github.com/seuusuario/jogoPOO.git`
 
 2. <b>Importe o projeto no Eclipse:</b>
 
@@ -42,31 +38,31 @@ RPG Game for my POO class
 
 <h3>Estrutura de pastas do projeto</h3>
 
-jogoPOO/
-└── src/
-├── main/
-│ └── Main.java
-├── personagens/
-│ ├── Personagem.java
-│ ├── Guerreiro.java
-│ ├── Mago.java
-│ ├── Arqueiro.java
-│ └── Curandeiro.java
-├── inimigos/
-│ ├── Inimigo.java
-│ ├── Dragao.java
-│ ├── Esqueleto.java
-│ └── Orc.java
-├── itens/
-│ ├── Item.java
-│ ├── Espada.java
-│ ├── Pocao.java
-│ └── Armadura.java
-├── mapa/
-│ ├── Mapa.java
-│ └── Regiao.java
-└── ui/
-└── InterfaceJogo.java
+- jogoPOO/
+- └── src/
+- ├── main/
+- │ └── Main.java
+- ├── personagens/
+- │ ├── Personagem.java
+- │ ├── Guerreiro.java
+- │ ├── Mago.java
+- │ ├── Arqueiro.java
+- │ └── Curandeiro.java
+- ├── inimigos/
+- │ ├── Inimigo.java
+- │ ├── Dragao.java
+- │ ├── Esqueleto.java
+- │ └── Orc.java
+- ├── itens/
+- │ ├── Item.java
+- │ ├── Espada.java
+- │ ├── Pocao.java
+- │ └── Armadura.java
+- ├── mapa/
+- │ ├── Mapa.java
+- │ └── Regiao.java
+- └── ui/
+- └── InterfaceJogo.java
 
 <h2>Sobre o Jogo</h2>
 
