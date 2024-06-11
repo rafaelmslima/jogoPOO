@@ -27,6 +27,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     Thread gameThread; // Faz com que um processo fique ocorrendo n vezes por segundo, atualizando a tela;
     KeyHandler keyH = new KeyHandler();
+    public CollisionChecker cChecker = new CollisionChecker(this);
     public Player player = new Player(this, keyH);
     int FPS = 60;
 
