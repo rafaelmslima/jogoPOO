@@ -29,6 +29,7 @@ public class GamePanel extends JPanel implements Runnable {
     Thread gameThread; // Faz com que um processo fique ocorrendo n vezes por segundo, atualizando a tela;
     KeyHandler keyH = new KeyHandler();
     public CollisionChecker cChecker = new CollisionChecker(this);
+    public AssetSetter aSetter = new AssetSetter(this);
     public Player player = new Player(this, keyH);
     public SuperObject obj[] = new SuperObject[10];
     int FPS = 60;
@@ -41,6 +42,10 @@ public class GamePanel extends JPanel implements Runnable {
         this.setDoubleBuffered(true); // melhora o desempenho da renderização gráfica em aplicações que envolvem animações ou renderizações frequentes de tela
         this.addKeyListener(keyH);
         this.setFocusable(true);
+    }
+
+    public void setupGame() {
+        aSetter.setObject(); // metodo para adicionar outros objetos do jogo5
     }
 
     public void startGameThread() {
@@ -85,8 +90,19 @@ public class GamePanel extends JPanel implements Runnable {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
+        //Tile
         tileM.draw(g2);
+        //Objetos
+        for (int i = 0; i < obj.length; i++) {
+            if (obj[i] != null) {
+                obj[i].draw(g2, this);
+            }
+
+        }
+
+        //Player
         player.draw(g2);
+
         g2.dispose(); // metodo essencial para a gestão eficiente dos recursos, usado para liberar qualquer recurso do sistema que o objeto estiver usando;
 
     }

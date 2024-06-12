@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Coloquei colisões com as áreas sólidas do mapa">
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/objects/boots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/objects/chest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/objects/door.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/objects/key.png" afterDir="false" />
+    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Inicio da criação da dos objetos que estarão no jogo">
+      <change afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/maps/world01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/maps/world01.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,14 +152,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718115578363</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Inicio da criação da dos objetos que estarão no jogo">
+      <option name="closed" value="true" />
+      <created>1718160559542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718160559542</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Alterando o formato do mapa para mapa &quot;infinito&quot;" />
     <MESSAGE value="Coloquei colisões com as áreas sólidas do mapa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coloquei colisões com as áreas sólidas do mapa" />
+    <MESSAGE value="Inicio da criação da dos objetos que estarão no jogo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio da criação da dos objetos que estarão no jogo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
