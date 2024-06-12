@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Alterando o formato do mapa para mapa &quot;infinito&quot;" />
+    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Coloquei colisões com as áreas sólidas do mapa">
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/boots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/chest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/door.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/key.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +27,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -43,18 +60,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/res/maps",
+    "last_opened_file_path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/res/objects",
     "onboarding.tips.debug.path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.language.Kotlin"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\objects" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\maps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -118,13 +136,30 @@
       <option name="project" value="LOCAL" />
       <updated>1718052086662</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Alterando o formato do mapa para mapa &quot;infinito&quot;">
+      <option name="closed" value="true" />
+      <created>1718052474242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718052474242</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Coloquei colisões com as áreas sólidas do mapa">
+      <option name="closed" value="true" />
+      <created>1718115578363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718115578363</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Alterando o formato do mapa para mapa &quot;infinito&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterando o formato do mapa para mapa &quot;infinito&quot;" />
+    <MESSAGE value="Coloquei colisões com as áreas sólidas do mapa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coloquei colisões com as áreas sólidas do mapa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
