@@ -23,18 +23,20 @@ public class GamePanel extends JPanel implements Runnable {
     // Configurações do MAPA
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-    public final int worldWidth = tileSize * maxWorldCol;
-    public final int worldHeight = tileSize * maxWorldRow;
 
-    Thread gameThread; // Faz com que um processo fique ocorrendo n vezes por segundo, atualizando a tela;
+    //Sistema
+    TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
+    Sound sound = new Sound();
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
+    Thread gameThread; // Faz com que um processo fique ocorrendo n vezes por segundo, atualizando a tela;
+
+    // Entity e Object
     public Player player = new Player(this, keyH);
     public SuperObject obj[] = new SuperObject[10];
     int FPS = 60;
 
-    TileManager tileM = new TileManager(this);
 
     public GamePanel() {
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
@@ -45,7 +47,8 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     public void setupGame() {
-        aSetter.setObject(); // metodo para adicionar outros objetos do jogo5
+        aSetter.setObject(); // metodo para adicionar outros objetos do jogo
+        playMusic(0);
     }
 
     public void startGameThread() {
@@ -105,5 +108,19 @@ public class GamePanel extends JPanel implements Runnable {
 
         g2.dispose(); // metodo essencial para a gestão eficiente dos recursos, usado para liberar qualquer recurso do sistema que o objeto estiver usando;
 
+    }
+    public void playMusic(int i) {
+
+        sound.setFile(i);
+        sound.play();
+        sound.loop();
+    }
+    public void stopMusic(){
+        sound.stop();
+    }
+    public void playSE (int i) {
+        //efeitos rapidos de som não precisam de loop
+        sound.setFile(i);
+        sound.play();
     }
 }

@@ -105,6 +105,7 @@ public class Player extends Entity{
 
             switch (objectName) {
                 case "Key":
+                    gp.playSE(1);
                     hasKey++;
                     gp.obj[i] = null;
                     System.out.println("Key: " + hasKey);
@@ -113,11 +114,18 @@ public class Player extends Entity{
                     if (hasKey > 0) {
                         gp.obj[i] = null;
                         hasKey --;
+                        System.out.println("Usou chave");
+                        System.out.println("Abriu Porta");
+                        gp.playSE(3);
+                    } else {
+                        System.out.println("Não possui chave");
                     }
-                    System.out.println("Usou chave");
-                    System.out.println("Abriu Porta");
                     break;
-
+                case "Boots":
+                    gp.playSE(2);
+                    speed += 2;
+                    gp.obj[i] =null;
+                    break;
             }
         }
     }
