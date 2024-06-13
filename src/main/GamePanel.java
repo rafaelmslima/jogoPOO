@@ -27,14 +27,17 @@ public class GamePanel extends JPanel implements Runnable {
     //Sistema
     TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
-    Sound sound = new Sound();
+    Sound music = new Sound();
+    Sound sEffects = new Sound();
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
+    public UI ui = new UI(this);
     Thread gameThread; // Faz com que um processo fique ocorrendo n vezes por segundo, atualizando a tela;
 
     // Entity e Object
     public Player player = new Player(this, keyH);
     public SuperObject obj[] = new SuperObject[10];
+
     int FPS = 60;
 
 
@@ -102,7 +105,8 @@ public class GamePanel extends JPanel implements Runnable {
             }
 
         }
-
+        //UI
+        ui.draw(g2);
         //Player
         player.draw(g2);
 
@@ -111,16 +115,16 @@ public class GamePanel extends JPanel implements Runnable {
     }
     public void playMusic(int i) {
 
-        sound.setFile(i);
-        sound.play();
-        sound.loop();
+        music.setFile(i);
+        music.play();
+        music.loop();
     }
     public void stopMusic(){
-        sound.stop();
+        music.stop();
     }
     public void playSE (int i) {
         //efeitos rapidos de som não precisam de loop
-        sound.setFile(i);
-        sound.play();
+        sEffects.setFile(i);
+        sEffects.play();
     }
 }
