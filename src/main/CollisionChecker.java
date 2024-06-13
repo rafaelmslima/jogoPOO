@@ -56,4 +56,77 @@ public class CollisionChecker {
                  break;
          }
      }
+     public int checkObject(Entity entity, boolean player) {
+         /* nesse método, vamos verificar se o player está tocando em algum objeto e se ele estiver
+         vamos retornar o index do objeto. Processando a reação correta.
+          */
+         int index = 999;
+
+         for (int i = 0; i < gp.obj.length; i++) {
+             if(gp.obj[i] != null) {
+                 //pegar a posição da área solida de Entity
+                 entity.solidArea.x = entity.worldX + entity.solidArea.x;
+                 entity.solidArea.y = entity.worldY + entity.solidArea.y;
+                 // Pegar a posição da área sólida do objeto
+                 gp.obj[i].solidArea.x = gp.obj[i].worldX + gp.obj[i].solidArea.x;
+                 gp.obj[i].solidArea.y = gp.obj[i].worldY + gp.obj[i].solidArea.y;
+
+                 switch (entity.direction) {
+                     /* o método intersects da classe rectangle faz uma checagem se 2 retangulos estão
+                     se chocando. Para usá-lo, precisamos saber se as duas áreas estão se chocando
+                      */
+                     case "up":
+                         entity.solidArea.y -= entity.speed;
+                         if(entity.solidArea.intersects(gp.obj[i].solidArea)) {
+                             if(gp.obj[i].collision == true) {
+                                 entity.collisionOn = true;
+                             }
+                             if (player == true) {
+                                 index = i;
+                             }
+                         }
+                         break;
+                     case "down":
+                         entity.solidArea.y += entity.speed;
+                         if(entity.solidArea.intersects(gp.obj[i].solidArea)) {
+                             if(gp.obj[i].collision == true) {
+                                 entity.collisionOn = true;
+                             }
+                             if (player == true) {
+                                 index = i;
+                             }
+                         }
+                         break;
+                     case "left":
+                         entity.solidArea.x -= entity.speed;
+                         if(entity.solidArea.intersects(gp.obj[i].solidArea)) {
+                             if (gp.obj[i].collision == true) {
+                                 entity.collisionOn = true;
+                             }
+                             if (player == true) {
+                                 index = i;
+                             }
+                         }
+                         break;
+                     case "right":
+                         entity.solidArea.x += entity.speed;
+                         if(entity.solidArea.intersects(gp.obj[i].solidArea)) {
+                             if(gp.obj[i].collision == true) {
+                                 entity.collisionOn = true;
+                             }
+                             if (player == true) {
+                                 index = i;
+                             }
+                         }
+                         break;
+                 }
+                 entity.solidArea.x = entity.solidAreaDefaultX;
+                 entity.solidArea.y = entity.solidAreaDefaultY;
+                 gp.obj[i].solidArea.x = gp.obj[i].solidAreaDefaultX;
+                 gp.obj[i].solidArea.y = gp.obj[i].solidAreaDefaultY;
+             }
+         }
+
+         return index;
+     }
 }

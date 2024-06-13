@@ -12,6 +12,7 @@ public class OBJ_Key extends SuperObject{
         } catch(IOException e) {
             e.printStackTrace();
         }
+        //solidArea.x = 5 //Só faço isso se quiser alterar o valor do tamanho da area solidade um único objeto
     }
 
 }

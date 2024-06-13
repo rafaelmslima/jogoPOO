@@ -13,6 +13,8 @@ public class Entity {
     public int spriteNum = 1;
 
     //criando a colisão
-    public Rectangle solidArea; //Cria um retangulo abstrato que servirá para armazenar os dados de colisão
+    public Rectangle solidArea; //Cria um retangulo abstrato que servirá para armazenar os dados de
+    public int solidAreaDefaultX, solidAreaDefaultY;
     public boolean collisionOn = false;
+
 }
