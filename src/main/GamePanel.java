@@ -96,6 +96,13 @@ public class GamePanel extends JPanel implements Runnable {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
+
+        // DEBUG, verificando a performance para o desenho dos tiles na tela
+        long drawStart = 0;
+        if (keyH.checkDrawTime == true) {
+            drawStart = System.nanoTime();
+        }
+
         //Tile
         tileM.draw(g2);
         //Objetos
@@ -109,6 +116,15 @@ public class GamePanel extends JPanel implements Runnable {
         ui.draw(g2);
         //Player
         player.draw(g2);
+
+        //Debug
+        if (keyH.checkDrawTime == true) {
+            long drawEnd = System.nanoTime();
+            long passed = drawEnd - drawStart;
+            g2.setColor(Color.white);
+            g2.drawString("Tempo de desenho: " + passed, 10, 400);
+            System.out.println("Tempo de desenho: " + passed);
+        }
 
         g2.dispose(); // metodo essencial para a gestão eficiente dos recursos, usado para liberar qualquer recurso do sistema que o objeto estiver usando;
 

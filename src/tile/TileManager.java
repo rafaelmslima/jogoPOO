@@ -1,6 +1,7 @@
 package tile;
 
 import main.GamePanel;
+import main.UtilityTool;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -16,43 +17,77 @@ public class TileManager {
 
     public TileManager(GamePanel gp) {
         this.gp = gp;
-        tile = new Tile[10]; // quantidade de imagens para o mapa
+        tile = new Tile[50]; // quantidade de imagens para o mapa
         mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
         getTileImage();
-        loadMap("/res/maps/world01.txt"); // passando o caminho do mapa como parâmetro
+        loadMap("/res/maps/worldV2.txt"); // passando o caminho do mapa como parâmetro
     }
 
     public void getTileImage() {
+        // usar um tile branco nos arrays 0 até 9.
+        setup(0,"grass00", false);
+        setup(1,"grass00", false);
+        setup(2,"grass00", false);
+        setup(3,"grass00", false);
+        setup(4,"grass00", false);
+        setup(5,"grass00", false);
+        setup(6,"grass00", false);
+        setup(7,"grass00", false);
+        setup(8,"grass00", false);
+        setup(9,"grass00", false);
+        setup(10,"grass00", false);
+
+        //Iniciando aqui o uso dos tiles porque é melhor para desenhar o mapa com dois digitos
+        //WATER
+        setup(11,"grass01", false);
+        setup(12,"water00", true);
+        setup(13,"water01", true);
+        setup(14,"water02", true);
+        setup(15,"water03", true);
+        setup(16,"water04", true);
+        setup(17,"water05", true);
+        setup(18,"water06", true);
+        setup(19,"water07", true);
+        setup(20,"water08", true);
+        setup(21,"water09", true);
+        setup(22,"water10", true);
+        setup(23,"water11", true);
+        setup(24,"water12", true);
+        setup(25,"water13", true);
+
+        //Tiles para road
+        setup(26,"road00", false);
+        setup(27,"road01", false);
+        setup(28,"road02", false);
+        setup(29,"road03", false);
+        setup(30,"road04", false);
+        setup(31,"road05", false);
+        setup(32,"road06", false);
+        setup(33,"road07", false);
+        setup(34,"road08", false);
+        setup(35,"road09", false);
+        setup(36,"road10", false);
+        setup(37,"road11", false);
+        setup(38,"road12", false);
+
+        //Tiles para Earth
+        setup(39,"earth", false);
+        //tiles para wall
+        setup(40,"wall", true);
+        //tiles para tree
+        setup(41,"tree", true);
+    }
+
+    public void setup(int index, String imageName, boolean collision) {
+        // forma mais prática de instanciar os tiles do jogo, reduzindo linhas e aumentando a performance
+        UtilityTool uTool = new UtilityTool();
+
         try {
-            tile[0] = new Tile();
-            tile[0].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/grass01.png"));
-            System.out.println("Carregou grass01.png");
-
-            tile[1] = new Tile();
-            tile[1].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/wall.png"));
-            tile[1].collision = true;
-            System.out.println("Carregou wall.png");
-
-            tile[2] = new Tile();
-            tile[2].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/water00.png"));
-            tile[2].collision = true;
-            System.out.println("Carregou water00.png");
-
-            tile[3] = new Tile();
-            tile[3].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/earth.png"));
-            System.out.println("Carregou earth.png");
-
-            tile[4] = new Tile();
-            tile[4].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/tree.png"));
-            tile[4].collision = true;
-
-            System.out.println("Carregou tree.png");
-
-            tile[5] = new Tile();
-            tile[5].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/sand.png"));
-            System.out.println("Carregou sand.png");
-
-        } catch (IOException e) {
+            tile[index] = new Tile();
+            tile[index].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/" + imageName + ".png"));
+            tile[index].image = uTool.scaleImage(tile[index].image, gp.tileSize, gp.tileSize);
+            tile[index].collision = collision;
+        } catch(IOException e) {
             e.printStackTrace();
         }
     }
@@ -67,13 +102,11 @@ public class TileManager {
 
             while (row < gp.maxWorldRow) {
                 String line = br.readLine();
-
                 if (line == null) {
                     throw new IOException("Linha do mapa está nula, verifique o formato do arquivo: " + filePath);
                 }
 
                 String[] numbers = line.split(" ");
-
                 if (numbers.length != gp.maxWorldCol) {
                     throw new IOException("Número de colunas na linha do mapa é diferente de maxWorldCol: " + filePath);
                 }
@@ -104,20 +137,22 @@ public class TileManager {
         while (worldCol < gp.maxWorldCol && worldRow < gp.maxWorldRow) {
             int tileNum = mapTileNum[worldCol][worldRow];
 
-            int worldX = worldCol * gp.tileSize;
-            int worldY = worldRow * gp.tileSize;
-            int screenX = worldX - gp.player.worldX + gp.player.screenX;
-            int screenY = worldY - gp.player.worldY + gp.player.screenY;
+            // Certificar-se de que o tileNum é válido antes de desenhar
+            if (tileNum >= 0 && tileNum < tile.length && tile[tileNum] != null) {
+                int worldX = worldCol * gp.tileSize;
+                int worldY = worldRow * gp.tileSize;
+                int screenX = worldX - gp.player.worldX + gp.player.screenX;
+                int screenY = worldY - gp.player.worldY + gp.player.screenY;
 
-            if (worldX + gp.tileSize > gp.player.worldX - gp.player.screenX &&
-                    worldX - gp.tileSize < gp.player.worldX + gp.player.screenX &&
-                    worldY + gp.tileSize > gp.player.worldY - gp.player.screenY &&
-                    worldY - gp.tileSize < gp.player.worldY + gp.player.screenY) {
-                g2.drawImage(tile[tileNum].image, screenX, screenY, gp.tileSize, gp.tileSize, null);
+                if (worldX + gp.tileSize > gp.player.worldX - gp.player.screenX &&
+                        worldX - gp.tileSize < gp.player.worldX + gp.player.screenX &&
+                        worldY + gp.tileSize > gp.player.worldY - gp.player.screenY &&
+                        worldY - gp.tileSize < gp.player.worldY + gp.player.screenY) {
+                    g2.drawImage(tile[tileNum].image, screenX, screenY, null);
+                }
             }
 
             worldCol++;
-
             if (worldCol == gp.maxWorldCol) {
                 worldCol = 0;
                 worldRow++;
