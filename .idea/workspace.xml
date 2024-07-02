@@ -4,56 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Finalizei a primeira parte: Criação do sistema inteiro do jogo. Esse é um jogo completo e funcional de treasure hunt.">
-      <change afterPath="$PROJECT_DIR$/src/main/UtilityTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/maps/worldV2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/floor01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/grass00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/hut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/road12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/table01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/tiles/water13.png" afterDir="false" />
+    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Melhorei o sistema de criação de tiles e colisão e troquei o mapa.">
+      <change afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/bigrock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/merchant_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/merchant_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_up_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Boots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Boots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/tiles/earth.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/tiles/earth.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/tiles/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/tiles/sand.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/tiles/water10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/tiles/tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/tiles/tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/tiles/wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/tiles/wall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/tiles/water.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718300134311</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Melhorei o sistema de criação de tiles e colisão e troquei o mapa.">
+      <option name="closed" value="true" />
+      <created>1719860905529</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719860905529</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,7 +246,8 @@
     <MESSAGE value="Criei a lógica agora dos objetos e interação com objetos." />
     <MESSAGE value="Criei mais objetos e adicionei a logica de musica e efeitos para o jogo" />
     <MESSAGE value="Finalizei a primeria parte: Criação do sistema inteiro do jogo. Esse é um jogo completo e funcional de treasure hunt." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizei a primeria parte: Criação do sistema inteiro do jogo. Esse é um jogo completo e funcional de treasure hunt." />
+    <MESSAGE value="Melhorei o sistema de criação de tiles e colisão e troquei o mapa." />
+    <option name="LAST_COMMIT_MESSAGE" value="Melhorei o sistema de criação de tiles e colisão e troquei o mapa." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
