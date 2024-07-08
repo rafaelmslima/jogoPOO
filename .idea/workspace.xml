@@ -4,27 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Melhorei o sistema de criação de tiles e colisão e troquei o mapa.">
-      <change afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/bigrock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/merchant_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/merchant_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/npc/oldman_up_2.png" afterDir="false" />
+    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_up_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_down_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_down_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_down_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_down_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_left_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_left_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_left_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_left_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_right_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_right_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_right_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_right_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_up_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_up_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/res/player/boy_up_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_up_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +77,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/res/maps",
+    "last_opened_file_path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/res/player",
     "onboarding.tips.debug.path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/Main.java",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
@@ -84,12 +89,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\player" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\maps" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\objects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\tiles" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\player" />
+      <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\tiles" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src" />
     </key>
   </component>
@@ -108,9 +114,9 @@
       </method>
     </configuration>
     <configuration name="TileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="TileManager" />
       <module name="Jogo" />
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,13 +127,6 @@
         <item itemvalue="Application.TileManager" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-22-openjdk-22-3183f394aec4-bad0321e" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -234,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719860905529</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
+      <option name="closed" value="true" />
+      <created>1719884517218</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719884517218</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,7 +254,8 @@
     <MESSAGE value="Criei mais objetos e adicionei a logica de musica e efeitos para o jogo" />
     <MESSAGE value="Finalizei a primeria parte: Criação do sistema inteiro do jogo. Esse é um jogo completo e funcional de treasure hunt." />
     <MESSAGE value="Melhorei o sistema de criação de tiles e colisão e troquei o mapa." />
-    <option name="LAST_COMMIT_MESSAGE" value="Melhorei o sistema de criação de tiles e colisão e troquei o mapa." />
+    <MESSAGE value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
