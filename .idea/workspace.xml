@@ -5,30 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/player/Testando/boy_up_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_down_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_down_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_down_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_down_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_left_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_left_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_left_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_left_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_right_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_right_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_right_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_right_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_up_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_up_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/player/boy_up_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/player/boy_up_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +30,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rafaelmslima&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rafaelmslima/jogoPOO.git&quot;,
+    &quot;accountId&quot;: &quot;5c8894b8-b603-4004-b0a4-84145ae6fc90&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,29 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Application.TileManager.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/res/player",
-    "onboarding.tips.debug.path": "C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TileManager.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/res/player&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/rafae/OneDrive/Área de Trabalho/Java/Jogo/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\player" />
@@ -241,8 +233,43 @@
       <option name="project" value="LOCAL" />
       <updated>1719884517218</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
+      <option name="closed" value="true" />
+      <created>1720463035885</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720463035885</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
+      <option name="closed" value="true" />
+      <created>1720463111126</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720463111126</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
+      <option name="closed" value="true" />
+      <created>1720463151123</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720463151123</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -254,6 +281,7 @@
     <MESSAGE value="Criei mais objetos e adicionei a logica de musica e efeitos para o jogo" />
     <MESSAGE value="Finalizei a primeria parte: Criação do sistema inteiro do jogo. Esse é um jogo completo e funcional de treasure hunt." />
     <MESSAGE value="Melhorei o sistema de criação de tiles e colisão e troquei o mapa." />
+    <MESSAGE value="Aprimorei o sistema de NPC colocando caixas de dialogo e interacao entre npc e usuario" />
     <MESSAGE value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
   </component>
