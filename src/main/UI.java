@@ -109,7 +109,9 @@ public class UI {
 
         //Tittle Name
         g2.setFont(g2.getFont().deriveFont(Font.BOLD, 70F));
-        String text = "Chrono Trigger";
+
+        String text = "Guardians' Odyssey";
+
         int x = getXforCenteredText(text);
         int y = gp.tileSize * 3;
 
