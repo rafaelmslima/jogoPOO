@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Adicionando a vida do player">
+    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Adicionado o sistema de eventos, onde é possível criar eventos que tiram vida, restauram vida e podem teleportar o player pelo mapa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/res/maps/worldV2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/res/maps/worldV2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,22 +26,21 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GitHubPullRequestState">{
-  &quot;prStates&quot;: [
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDOL7Lgms52BVLt&quot;,
-        &quot;number&quot;: 2
+      "id": {
+        "id": "PR_kwDOL7Lgms52BVLt",
+        "number": 2
       },
-      &quot;lastSeen&quot;: 1721586668686
+      "lastSeen": 1721595329990
     }
   ]
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/rafaelmslima/jogoPOO.git&quot;,
@@ -284,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721575194554</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Adicionado o sistema de eventos, onde é possível criar eventos que tiram vida, restauram vida e podem teleportar o player pelo mapa">
+      <option name="closed" value="true" />
+      <created>1721595374039</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721595374039</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +315,8 @@
     <MESSAGE value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
     <MESSAGE value="Adicionei o menu do game e algumas funcionalidades" />
     <MESSAGE value="Adicionando a vida do player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando a vida do player" />
+    <MESSAGE value="Adicionado o sistema de eventos, onde é possível criar eventos que tiram vida, restauram vida e podem teleportar o player pelo mapa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado o sistema de eventos, onde é possível criar eventos que tiram vida, restauram vida e podem teleportar o player pelo mapa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

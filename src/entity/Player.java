@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-public class Player extends entity.Entity {
+public class Player extends Entity {
 
     KeyHandler keyH;
 
