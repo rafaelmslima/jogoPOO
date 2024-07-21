@@ -8,7 +8,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-public class Player extends Entity {
+public class Player extends entity.Entity {
 
     KeyHandler keyH;
 
@@ -78,6 +78,13 @@ public class Player extends Entity {
             int npcIndex = gp.cChecker.checkEntity(this, gp.npc);
             interactNPC(npcIndex);
 
+            // Checando os eventos
+            gp.eHandler.checkEvent();
+
+            gp.keyH.enterPressed = false;
+
+
+
             // Se collisionOn for false o player pode se mover
             // primeiro checamos a direção do movimento para só agora checar a colisão
             if (collisionOn == false){
@@ -114,7 +121,6 @@ public class Player extends Entity {
                 gp.npc[i].speak();
             }
         }
-        gp.keyH.enterPressed = false;
     }
 
     public void draw(Graphics2D g2) {
