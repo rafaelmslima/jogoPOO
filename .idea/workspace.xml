@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +140,8 @@
       <option name="presentableId" value="Default" />
       <updated>1714655979987</updated>
       <workItem from="1721508947501" duration="24507000" />
-      <workItem from="1721568916006" duration="6201000" />
+      <workItem from="1721568916006" duration="8051000" />
+      <workItem from="1721591878793" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="Alterando o formato do mapa para mapa &quot;infinito&quot;">
       <option name="closed" value="true" />
