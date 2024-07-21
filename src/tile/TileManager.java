@@ -20,7 +20,7 @@ public class TileManager {
         tile = new Tile[50]; // quantidade de imagens para o mapa
         mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
         getTileImage();
-        loadMap("/res/maps/worldV2.txt"); // passando o caminho do mapa como parâmetro
+        loadMap("/res/maps/mapa02.txt"); // passando o caminho do mapa como parâmetro
     }
 
     public void getTileImage() {
@@ -35,11 +35,14 @@ public class TileManager {
         setup(7,"grass00", false);
         setup(8,"grass00", false);
         setup(9,"grass00", false);
-        setup(10,"grass00", false);
+
 
         //Iniciando aqui o uso dos tiles porque é melhor para desenhar o mapa com dois digitos
-        //WATER
+        //grass
+        setup(10,"grass00", false);
         setup(11,"grass01", false);
+
+        //WATER
         setup(12,"water00", true);
         setup(13,"water01", true);
         setup(14,"water02", true);
@@ -70,12 +73,19 @@ public class TileManager {
         setup(37,"road11", false);
         setup(38,"road12", false);
 
-        //Tiles para Earth
-        setup(39,"earth", false);
+        //demais tiles
+        //tiles para table
+        setup(39,"table01", false);
         //tiles para wall
         setup(40,"wall", true);
         //tiles para tree
         setup(41,"tree", true);
+        //tiles para hut
+        setup(42,"hut", true);
+        //tiles para Earth
+        setup(43,"earth", false);
+        //tiles para Earth
+        setup(44,"floor01", false);
     }
 
     public void setup(int index, String imageName, boolean collision) {
