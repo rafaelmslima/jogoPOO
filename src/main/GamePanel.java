@@ -49,7 +49,7 @@ public class GamePanel extends JPanel implements Runnable {
     public final int dialogueState = 3;
 
 
-    int FPS = 60;
+    int FPS = 70;
 
 
     public GamePanel() {

@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;">
+    <list default="true" id="37c5e1b4-28ba-459c-b6ba-bd48644fcbe6" name="Changes" comment="Adicionei o menu do game e algumas funcionalidades">
+      <change afterPath="$PROJECT_DIR$/src/main/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/entity/NPC_OldMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/entity/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Life.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/heart_blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/heart_full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/objects/heart_half.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/NPC_OldMan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +97,7 @@
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\objects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\objects" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\player" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src\res\tiles" />
       <recent name="C:\Users\rafae\OneDrive\Área de Trabalho\Java\Jogo\src" />
@@ -257,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720463151123</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adicionei o menu do game e algumas funcionalidades">
+      <option name="closed" value="true" />
+      <created>1721494171077</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721494171077</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +303,8 @@
     <MESSAGE value="Melhorei o sistema de criação de tiles e colisão e troquei o mapa." />
     <MESSAGE value="Aprimorei o sistema de NPC colocando caixas de dialogo e interacao entre npc e usuario" />
     <MESSAGE value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criei um sistema de NPCs e uma checagem de colisão entre o NPC e entre o Player. Além de criar uma forma de alterar o estado do jogo, usando o pause &quot;p&quot;" />
+    <MESSAGE value="Adicionei o menu do game e algumas funcionalidades" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionei o menu do game e algumas funcionalidades" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

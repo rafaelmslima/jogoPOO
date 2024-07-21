@@ -1,6 +1,8 @@
 package main;
 
 import object.OBJ_Key;
+import object.OBJ_Life;
+import object.SuperObject;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -13,6 +15,7 @@ public class UI {
     GamePanel gp;
     Graphics2D g2;
     Font arial_40, arial_50B;
+    BufferedImage heart_full, heart_half, heart_blank;
     public boolean messageOn = false;
     public String message = "";
     int messageCounter = 0;
@@ -28,6 +31,12 @@ public class UI {
         this.gp = gp;
         arial_40 = new Font("Arial",Font.PLAIN, 40);
         arial_50B = new Font("Arial",Font.BOLD, 45);
+
+        // Create HUD Object
+        SuperObject life = new OBJ_Life(gp);
+        heart_full = life.image;
+        heart_half = life.image2;
+        heart_blank = life.image3;
     }
 
     public void showMessage(String text) {
@@ -48,15 +57,47 @@ public class UI {
         // Play State
         if(gp.gameState == gp.playState) {
             // fazer o playstate depois
+            drawPlayerLife();
         }
         // Pause State
         if (gp.gameState == gp.pauseState) {
             drawPauseScreen();
+            drawPlayerLife();
+
         }
 
         // Dialogue State
         if(gp.gameState == gp.dialogueState) {
             drawDialogueScreen();
+            drawPlayerLife();
+        }
+
+    }
+    public void drawPlayerLife() {
+        int x = gp.tileSize/2;
+        int y = gp.tileSize/2;
+        int i = 0;
+
+        // Draw Max Life
+        while(i < gp.player.maxLife/2) {
+            g2.drawImage(heart_blank, x, y, null);
+            i++;
+            x += gp.tileSize;
+        }
+        // Reset
+        x = gp.tileSize/2;
+        y = gp.tileSize/2;
+        i = 0;
+
+        // Draw current life
+        while(i < gp.player.life) {
+            g2.drawImage(heart_half, x, y, null);
+            i++;
+            if (i < gp.player.life) {
+                g2.drawImage(heart_full, x, y, null);
+            }
+            i++;
+            x+= gp.tileSize;
         }
 
     }
@@ -65,9 +106,10 @@ public class UI {
         // trocando a cor background do title screen
         g2.setColor(new Color(0, 0, 0));
         g2.fillRect(0,0,gp.screenWidth,gp.screenHeight);
+
         //Tittle Name
         g2.setFont(g2.getFont().deriveFont(Font.BOLD, 70F));
-        String text = "Nome do Jogo aqui";
+        String text = "Chrono Trigger";
         int x = getXforCenteredText(text);
         int y = gp.tileSize * 3;
 
@@ -79,7 +121,7 @@ public class UI {
         g2.drawString(text,x,y);
 
         // Imagem de um personagem
-        x = gp.screenWidth / 2 - (gp.tileSize);
+        x = gp.screenWidth / 2- (gp.tileSize);
         y += gp.tileSize*2;
         g2.drawImage(gp.player.down1, x, y, gp.tileSize*2, gp.tileSize*2, null);
 

@@ -26,6 +26,11 @@ public class KeyHandler implements KeyListener {
         int code = e.getKeyCode(); //retorna o numero da tecla que foi pressionada
 
         //TitleState
+        /*
+        Continuar [0]
+        novo jogo [1]
+        configuracoes [2]
+         */
         if(gp.gameState == gp.titleState) {
             if (code == KeyEvent.VK_W) {
                 gp.ui.commandNum--;

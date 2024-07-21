@@ -8,12 +8,14 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
-public class Player extends Entity{
+public class Player extends Entity {
 
     KeyHandler keyH;
 
     public final int screenX;
     public final int screenY;
+    public int maxLife;
+    public int life;
     public Player(GamePanel gp, KeyHandler keyH) {
         super(gp);
         this.keyH = keyH;
@@ -35,6 +37,10 @@ public class Player extends Entity{
         worldY = gp.tileSize * 21; //quero que o player sempre esteja no centro da tela para que possa ter um mapa maior
         speed = 4;
         direction = "down";
+
+        // Player Status
+        maxLife = 6;
+        life = maxLife;
     }
 
     public void getPlayerImage() {
