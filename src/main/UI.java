@@ -67,7 +67,7 @@ public class UI {
         g2.fillRect(0,0,gp.screenWidth,gp.screenHeight);
         //Tittle Name
         g2.setFont(g2.getFont().deriveFont(Font.BOLD, 70F));
-        String text = "Nome do Jogo aqui";
+        String text = "Guardians' Odyssey";
         int x = getXforCenteredText(text);
         int y = gp.tileSize * 3;
 
